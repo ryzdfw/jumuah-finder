@@ -1,20 +1,19 @@
 const fs = require("fs");
 
 const dataPath = "masjid-data.json";
-const sharedUrl = "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7";
 
 const rawEntries = `
-Sufaraa|704 N Preston Rd, Celina, TX 75009|Code: 026291; Celina Masjid. Only brothers, no wudu area
-Islamic Centers of Prosper and Celina - ICPC|2616 S Legacy Dr, Celina, TX 75009|Google Maps list code: 93500
+Sufaraa|704 N Preston Rd, Celina, TX 75009
+Islamic Centers of Prosper and Celina - ICPC|2616 S Legacy Dr, Celina, TX 75009
 Sufaraa - Mckinney||
-Islamic Association of Tarrant County||Al-Ibraheemi
+Islamic Association of Tarrant County||
 Dar El-Quran||
 Salaam||
 Masjid-e-Sajideen||
 Imaan Melissa||
 Dallas Diyanet Mosque||
 Masjid Salahadeen||
-IslamInSpanish Dallas Outreach Center||Temporarily closed in Google Maps list
+IslamInSpanish Dallas Outreach Center||
 Anna Islamic Center||
 Ar Rahman Mosque||
 Islamic Center of Rowlett||
@@ -76,7 +75,7 @@ ISAT Center Masjid||
 Islamic Association of Carrollton (IAC)||
 Islamic Society of Denton||
 Islamic Association of Lewisville & Flower Mound||
-Duncanville Islamic Center||Temporarily closed in Google Maps list
+Duncanville Islamic Center||
 Dialogue Institute Dallas||
 Princeton Islamic Center||
 Islamic Center of South Dallas||
@@ -126,15 +125,13 @@ const existingIds = new Set(data.masjids.map((masjid) => masjid.id));
 let added = 0;
 
 for (const line of rawEntries.split("\n")) {
-  const [name, address, extraNote = ""] = line.split("|");
+  const [name, address] = line.split("|");
   const aliasId = aliases.get(name);
 
   if (aliasId) {
     const existing = data.masjids.find((masjid) => masjid.id === aliasId);
 
     if (existing) {
-      existing.source.googleMapsListUrl = sharedUrl;
-      existing.source.googleMapsListName = name;
       existing.source.googleMapsListCheckedAt = "2026-06-20";
     }
 
@@ -163,16 +160,9 @@ for (const line of rawEntries.split("\n")) {
     jumuahTimes: [],
     source: {
       type: "google maps list",
-      url: sharedUrl,
       checkedAt: "2026-06-20",
     },
-    notes: [
-      "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs.",
-      "Website and Jumu'ah times need research.",
-      extraNote,
-    ]
-      .filter(Boolean)
-      .join(" "),
+    notes: "Imported from a shared Google Maps list. Website and Jumu'ah times need research.",
   });
 
   added += 1;
@@ -180,7 +170,7 @@ for (const line of rawEntries.split("\n")) {
 
 data.lastUpdated = "2026-06-20";
 data.collectionNotes = [
-  "Imported additional DFW Islamic centers and musallahs from Ahmed Sheikh's shared Google Maps list; entries without websites or times are marked for research.",
+  "Imported additional DFW Islamic centers and musallahs from a shared Google Maps list; entries without websites or times are marked for research.",
   ...data.collectionNotes.filter(
     (note) => !note.startsWith("Imported additional DFW"),
   ),

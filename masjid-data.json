@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "lastUpdated": "2026-06-20",
   "collectionNotes": [
-    "Imported additional DFW Islamic centers and musallahs from Ahmed Sheikh's shared Google Maps list; entries without websites or times are marked for research.",
+    "Imported additional DFW Islamic centers and musallahs from a shared Google Maps list; entries without websites or times are marked for research.",
     "For masjids whose prayer widgets do not expose Jumu'ah in static page text, verify the rendered homepage with a browser screenshot before marking times unavailable.",
     "American Imams Academy is a known case: Jumu'ah appears visually under Isha on the rendered homepage but is missed by static text extraction."
   ],
@@ -34,8 +34,6 @@
         "type": "website",
         "url": "https://epicmasjid.org/",
         "checkedAt": "2026-06-20",
-        "googleMapsListUrl": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
-        "googleMapsListName": "East Plano Islamic Center (EPIC Masjid)",
         "googleMapsListCheckedAt": "2026-06-20"
       },
       "notes": "Public homepage exposed these Jumu'ah times without login."
@@ -64,8 +62,6 @@
         "type": "website",
         "url": "https://www.dmccmasjid.org/",
         "checkedAt": "2026-06-20",
-        "googleMapsListUrl": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
-        "googleMapsListName": "Dallas Muslim Community Center (DMCC)",
         "googleMapsListCheckedAt": "2026-06-20"
       },
       "notes": "Public homepage prayer-time section lists Jummah Khutbah at 1:45 PM."
@@ -101,8 +97,6 @@
         "type": "website",
         "url": "https://sachsemasjid.org/",
         "checkedAt": "2026-06-20",
-        "googleMapsListUrl": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
-        "googleMapsListName": "Sachse Muslim Society",
         "googleMapsListCheckedAt": "2026-06-20"
       },
       "notes": "Public homepage lists 1st, 2nd, and 3rd Jumuah times. The site shows 01:30, 02:20, and 03:15; stored here as PM based on Jumu'ah context."
@@ -136,8 +130,6 @@
         "checkedAt": "2026-06-20",
         "verificationMethod": "browser full-page screenshot",
         "requiresRenderedCheck": true,
-        "googleMapsListUrl": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
-        "googleMapsListName": "American Imams Academy , AIA Masjid",
         "googleMapsListCheckedAt": "2026-06-20"
       },
       "notes": "The rendered homepage prayer table shows Jumu'ah under Isha as 1:30 PM and 2:30 PM. Static text extraction did not expose this line, so it was verified from a full-page browser screenshot."
@@ -169,8 +161,6 @@
         "type": "website",
         "url": "https://icwtx.org/",
         "checkedAt": "2026-06-20",
-        "googleMapsListUrl": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
-        "googleMapsListName": "Islamic Center of Wylie",
         "googleMapsListCheckedAt": "2026-06-20"
       },
       "notes": "Public homepage lists Jumu'ah at 1:45 PM and Iqamah at 2:15 PM."
@@ -186,10 +176,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research. Code: 026291; Celina Masjid. Only brothers, no wudu area"
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-centers-of-prosper-and-celina-icpc",
@@ -202,10 +191,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research. Google Maps list code: 93500"
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "sufaraa-mckinney",
@@ -217,10 +205,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-association-of-tarrant-county",
@@ -232,10 +219,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research. Al-Ibraheemi"
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "dar-el-quran",
@@ -247,10 +233,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "salaam",
@@ -262,10 +247,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "masjid-e-sajideen",
@@ -277,10 +261,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "imaan-melissa",
@@ -292,10 +275,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "dallas-diyanet-mosque",
@@ -307,10 +289,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "masjid-salahadeen",
@@ -322,10 +303,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islaminspanish-dallas-outreach-center",
@@ -337,10 +317,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research. Temporarily closed in Google Maps list"
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "anna-islamic-center",
@@ -352,10 +331,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "ar-rahman-mosque",
@@ -367,10 +345,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-center-of-rowlett",
@@ -382,10 +359,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "heb-masjid",
@@ -397,10 +373,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "annoor-center",
@@ -412,10 +387,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "bayyinah-institute",
@@ -427,10 +401,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "bayt-al-karim-islamic-center",
@@ -442,10 +415,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "musallah-masjid-mosque-2nd-fl-seena-one-medical-center",
@@ -457,10 +429,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "al-mu-min-mosque",
@@ -472,10 +443,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "unity-islamic-center-mansfield-masjid-official",
@@ -487,10 +457,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "dar-al-arqam-mosque",
@@ -502,10 +471,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "dar-el-eman-islamic-center-deic",
@@ -517,10 +485,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "greenville-musallah",
@@ -532,10 +499,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "desoto-house-of-peace-mosque-community-center",
@@ -547,10 +513,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "al-hedayah-academy",
@@ -562,10 +527,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "zia-ul-quran-masjid",
@@ -577,10 +541,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-center-of-forney-icf",
@@ -592,10 +555,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "dar-elsalam-islamic-center",
@@ -607,10 +569,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-center-of-denison",
@@ -622,10 +583,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "masjid-faruq-of-grand-prairie-tx",
@@ -637,10 +597,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "bosnian-american-cultural-center-of-north-texas",
@@ -652,10 +611,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "dar-alhuda-inc",
@@ -667,10 +625,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "masjid-al-quran",
@@ -682,10 +639,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-center-of-euless",
@@ -697,10 +653,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "masjid-al-islam-dallas-tx",
@@ -712,10 +667,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "euless-musalla",
@@ -727,10 +681,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "barkaat-ul-quran",
@@ -742,10 +695,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "maktab-foundation",
@@ -757,10 +709,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "las-colinas-islamic-center",
@@ -772,10 +723,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "al-razzaq-islamic-centre",
@@ -787,10 +737,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "nour-al-quran-society",
@@ -802,10 +751,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "association-for-guidance-and-education-rowlett-musallah",
@@ -817,10 +765,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "bilal-community-center",
@@ -832,10 +779,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "makkah-masjid-garland-mosque",
@@ -847,10 +793,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "masjid-faizan-e-madinah-wylie",
@@ -862,10 +807,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "al-ansar-society",
@@ -877,10 +821,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-association-texas-masjid-ahsan",
@@ -892,10 +835,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "minhaj-ul-quran",
@@ -907,10 +849,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "noori-mosque",
@@ -922,10 +863,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "icna-center",
@@ -937,10 +877,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "iqa",
@@ -952,10 +891,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "qalam-institute",
@@ -967,10 +905,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "isra-foundation",
@@ -982,10 +919,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "west-plano-musallah",
@@ -997,10 +933,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-society-of-mesquite",
@@ -1012,10 +947,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-association-of-desoto-texas",
@@ -1027,10 +961,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "mckinney-mosque",
@@ -1042,10 +975,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "madinah-mosque-of-carrollton",
@@ -1057,10 +989,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "grand-prairie-masjid",
@@ -1072,10 +1003,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-association-of-colleyville",
@@ -1087,10 +1017,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-association-of-fort-worth",
@@ -1102,10 +1031,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "keller-islamic-center-kic",
@@ -1117,10 +1045,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-association-mesquite",
@@ -1132,10 +1059,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "masjid-yaseen",
@@ -1147,10 +1073,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "mansfield-islamic-center",
@@ -1162,10 +1087,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "isat-center-masjid",
@@ -1177,10 +1101,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-association-of-carrollton-iac",
@@ -1192,10 +1115,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-society-of-denton",
@@ -1207,10 +1129,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-association-of-lewisville-flower-mound",
@@ -1222,10 +1143,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "duncanville-islamic-center",
@@ -1237,10 +1157,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research. Temporarily closed in Google Maps list"
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "dialogue-institute-dallas",
@@ -1252,10 +1171,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "princeton-islamic-center",
@@ -1267,10 +1185,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-center-of-south-dallas",
@@ -1282,10 +1199,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-association-of-north-texas-iant-masjid",
@@ -1297,10 +1213,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "mesquite-islamic-center-mic-mosque",
@@ -1312,10 +1227,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-center-of-aubrey",
@@ -1327,10 +1241,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-center-of-southlake",
@@ -1342,10 +1255,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-center-of-irving",
@@ -1357,10 +1269,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "icc-islamic-center-of-coppell",
@@ -1372,10 +1283,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "bosniaks-islamic-center-dallas-fort-worth-bic",
@@ -1387,10 +1297,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-association-of-collin-county-plano-mosque",
@@ -1402,10 +1311,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "mas-islamic-center-of-dallas",
@@ -1417,10 +1325,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-center-of-frisco",
@@ -1432,10 +1339,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "valley-ranch-islamic-center-vric",
@@ -1447,10 +1353,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-center-of-quad-cities",
@@ -1462,10 +1367,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "mckinney-islamic-association",
@@ -1477,10 +1381,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     },
     {
       "id": "islamic-association-of-allen",
@@ -1492,10 +1395,9 @@
       "jumuahTimes": [],
       "source": {
         "type": "google maps list",
-        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
         "checkedAt": "2026-06-20"
       },
-      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
     }
   ]
 }
