@@ -2,6 +2,7 @@
   "schemaVersion": 1,
   "lastUpdated": "2026-06-20",
   "collectionNotes": [
+    "Imported additional DFW Islamic centers and musallahs from Ahmed Sheikh's shared Google Maps list; entries without websites or times are marked for research.",
     "For masjids whose prayer widgets do not expose Jumu'ah in static page text, verify the rendered homepage with a browser screenshot before marking times unavailable.",
     "American Imams Academy is a known case: Jumu'ah appears visually under Isha on the rendered homepage but is missed by static text extraction."
   ],
@@ -32,7 +33,10 @@
       "source": {
         "type": "website",
         "url": "https://epicmasjid.org/",
-        "checkedAt": "2026-06-20"
+        "checkedAt": "2026-06-20",
+        "googleMapsListUrl": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "googleMapsListName": "East Plano Islamic Center (EPIC Masjid)",
+        "googleMapsListCheckedAt": "2026-06-20"
       },
       "notes": "Public homepage exposed these Jumu'ah times without login."
     },
@@ -59,7 +63,10 @@
       "source": {
         "type": "website",
         "url": "https://www.dmccmasjid.org/",
-        "checkedAt": "2026-06-20"
+        "checkedAt": "2026-06-20",
+        "googleMapsListUrl": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "googleMapsListName": "Dallas Muslim Community Center (DMCC)",
+        "googleMapsListCheckedAt": "2026-06-20"
       },
       "notes": "Public homepage prayer-time section lists Jummah Khutbah at 1:45 PM."
     },
@@ -93,7 +100,10 @@
       "source": {
         "type": "website",
         "url": "https://sachsemasjid.org/",
-        "checkedAt": "2026-06-20"
+        "checkedAt": "2026-06-20",
+        "googleMapsListUrl": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "googleMapsListName": "Sachse Muslim Society",
+        "googleMapsListCheckedAt": "2026-06-20"
       },
       "notes": "Public homepage lists 1st, 2nd, and 3rd Jumuah times. The site shows 01:30, 02:20, and 03:15; stored here as PM based on Jumu'ah context."
     },
@@ -125,7 +135,10 @@
         "url": "https://imamsacademy.net/",
         "checkedAt": "2026-06-20",
         "verificationMethod": "browser full-page screenshot",
-        "requiresRenderedCheck": true
+        "requiresRenderedCheck": true,
+        "googleMapsListUrl": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "googleMapsListName": "American Imams Academy , AIA Masjid",
+        "googleMapsListCheckedAt": "2026-06-20"
       },
       "notes": "The rendered homepage prayer table shows Jumu'ah under Isha as 1:30 PM and 2:30 PM. Static text extraction did not expose this line, so it was verified from a full-page browser screenshot."
     },
@@ -155,9 +168,1334 @@
       "source": {
         "type": "website",
         "url": "https://icwtx.org/",
-        "checkedAt": "2026-06-20"
+        "checkedAt": "2026-06-20",
+        "googleMapsListUrl": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "googleMapsListName": "Islamic Center of Wylie",
+        "googleMapsListCheckedAt": "2026-06-20"
       },
       "notes": "Public homepage lists Jumu'ah at 1:45 PM and Iqamah at 2:15 PM."
+    },
+    {
+      "id": "sufaraa",
+      "name": "Sufaraa",
+      "shortName": "Sufaraa",
+      "website": "",
+      "address": "704 N Preston Rd, Celina, TX 75009",
+      "city": "Celina",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research. Code: 026291; Celina Masjid. Only brothers, no wudu area"
+    },
+    {
+      "id": "islamic-centers-of-prosper-and-celina-icpc",
+      "name": "Islamic Centers of Prosper and Celina - ICPC",
+      "shortName": "Islamic Centers of Prosper and Celina - ICPC",
+      "website": "",
+      "address": "2616 S Legacy Dr, Celina, TX 75009",
+      "city": "Celina",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research. Google Maps list code: 93500"
+    },
+    {
+      "id": "sufaraa-mckinney",
+      "name": "Sufaraa - Mckinney",
+      "shortName": "Sufaraa - Mckinney",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-association-of-tarrant-county",
+      "name": "Islamic Association of Tarrant County",
+      "shortName": "Islamic Association of Tarrant County",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research. Al-Ibraheemi"
+    },
+    {
+      "id": "dar-el-quran",
+      "name": "Dar El-Quran",
+      "shortName": "Dar El-Quran",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "salaam",
+      "name": "Salaam",
+      "shortName": "Salaam",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "masjid-e-sajideen",
+      "name": "Masjid-e-Sajideen",
+      "shortName": "Masjid-e-Sajideen",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "imaan-melissa",
+      "name": "Imaan Melissa",
+      "shortName": "Imaan Melissa",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "dallas-diyanet-mosque",
+      "name": "Dallas Diyanet Mosque",
+      "shortName": "Dallas Diyanet Mosque",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "masjid-salahadeen",
+      "name": "Masjid Salahadeen",
+      "shortName": "Masjid Salahadeen",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islaminspanish-dallas-outreach-center",
+      "name": "IslamInSpanish Dallas Outreach Center",
+      "shortName": "IslamInSpanish Dallas Outreach Center",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research. Temporarily closed in Google Maps list"
+    },
+    {
+      "id": "anna-islamic-center",
+      "name": "Anna Islamic Center",
+      "shortName": "Anna Islamic Center",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "ar-rahman-mosque",
+      "name": "Ar Rahman Mosque",
+      "shortName": "Ar Rahman Mosque",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-center-of-rowlett",
+      "name": "Islamic Center of Rowlett",
+      "shortName": "Islamic Center of Rowlett",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "heb-masjid",
+      "name": "HEB Masjid",
+      "shortName": "HEB Masjid",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "annoor-center",
+      "name": "Annoor Center",
+      "shortName": "Annoor Center",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "bayyinah-institute",
+      "name": "Bayyinah Institute",
+      "shortName": "Bayyinah Institute",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "bayt-al-karim-islamic-center",
+      "name": "Bayt Al-Karim Islamic Center",
+      "shortName": "Bayt Al-Karim Islamic Center",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "musallah-masjid-mosque-2nd-fl-seena-one-medical-center",
+      "name": "Musallah Masjid Mosque (2nd Fl) Seena One Medical Center",
+      "shortName": "Musallah Masjid Mosque (2nd Fl) Seena One Medical Center",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "al-mu-min-mosque",
+      "name": "Al-Mu'min Mosque",
+      "shortName": "Al-Mu'min Mosque",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "unity-islamic-center-mansfield-masjid-official",
+      "name": "Unity Islamic Center - Mansfield Masjid Official",
+      "shortName": "Unity Islamic Center - Mansfield Masjid Official",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "dar-al-arqam-mosque",
+      "name": "Dar Al-Arqam Mosque",
+      "shortName": "Dar Al-Arqam Mosque",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "dar-el-eman-islamic-center-deic",
+      "name": "Dar El-Eman Islamic Center (DEIC)",
+      "shortName": "Dar El-Eman Islamic Center (DEIC)",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "greenville-musallah",
+      "name": "Greenville Musallah",
+      "shortName": "Greenville Musallah",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "desoto-house-of-peace-mosque-community-center",
+      "name": "Desoto House of Peace - Mosque & Community Center",
+      "shortName": "Desoto House of Peace - Mosque & Community Center",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "al-hedayah-academy",
+      "name": "Al-Hedayah Academy",
+      "shortName": "Al-Hedayah Academy",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "zia-ul-quran-masjid",
+      "name": "Zia ul Quran Masjid",
+      "shortName": "Zia ul Quran Masjid",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-center-of-forney-icf",
+      "name": "Islamic Center of Forney - ICF",
+      "shortName": "Islamic Center of Forney - ICF",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "dar-elsalam-islamic-center",
+      "name": "Dar Elsalam Islamic Center",
+      "shortName": "Dar Elsalam Islamic Center",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-center-of-denison",
+      "name": "Islamic center of Denison",
+      "shortName": "Islamic center of Denison",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "masjid-faruq-of-grand-prairie-tx",
+      "name": "Masjid Faruq of Grand Prairie TX",
+      "shortName": "Masjid Faruq of Grand Prairie TX",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "bosnian-american-cultural-center-of-north-texas",
+      "name": "Bosnian American Cultural Center of North Texas",
+      "shortName": "Bosnian American Cultural Center of North Texas",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "dar-alhuda-inc",
+      "name": "Dar Alhuda Inc مسجد",
+      "shortName": "Dar Alhuda Inc مسجد",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "masjid-al-quran",
+      "name": "Masjid Al Quran",
+      "shortName": "Masjid Al Quran",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-center-of-euless",
+      "name": "Islamic Center of Euless مسجد",
+      "shortName": "Islamic Center of Euless مسجد",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "masjid-al-islam-dallas-tx",
+      "name": "Masjid al-Islam - Dallas, TX",
+      "shortName": "Masjid al-Islam - Dallas, TX",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "euless-musalla",
+      "name": "Euless Musalla",
+      "shortName": "Euless Musalla",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "barkaat-ul-quran",
+      "name": "Barkaat-Ul-Quran",
+      "shortName": "Barkaat-Ul-Quran",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "maktab-foundation",
+      "name": "Maktab Foundation",
+      "shortName": "Maktab Foundation",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "las-colinas-islamic-center",
+      "name": "Las Colinas Islamic Center",
+      "shortName": "Las Colinas Islamic Center",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "al-razzaq-islamic-centre",
+      "name": "Al Razzaq Islamic Centre",
+      "shortName": "Al Razzaq Islamic Centre",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "nour-al-quran-society",
+      "name": "Nour Al-Quran Society",
+      "shortName": "Nour Al-Quran Society",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "association-for-guidance-and-education-rowlett-musallah",
+      "name": "Association for Guidance and Education (Rowlett Musallah)",
+      "shortName": "Association for Guidance and Education (Rowlett Musallah)",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "bilal-community-center",
+      "name": "Bilal Community Center",
+      "shortName": "Bilal Community Center",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "makkah-masjid-garland-mosque",
+      "name": "Makkah Masjid (Garland Mosque)",
+      "shortName": "Makkah Masjid (Garland Mosque)",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "masjid-faizan-e-madinah-wylie",
+      "name": "Masjid Faizan E Madinah Wylie",
+      "shortName": "Masjid Faizan E Madinah Wylie",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "al-ansar-society",
+      "name": "Al-Ansar Society",
+      "shortName": "Al-Ansar Society",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-association-texas-masjid-ahsan",
+      "name": "Islamic Association Texas (Masjid Ahsan)",
+      "shortName": "Islamic Association Texas (Masjid Ahsan)",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "minhaj-ul-quran",
+      "name": "Minhaj ul-Quran",
+      "shortName": "Minhaj ul-Quran",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "noori-mosque",
+      "name": "Noori Mosque",
+      "shortName": "Noori Mosque",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "icna-center",
+      "name": "ICNA Center",
+      "shortName": "ICNA Center",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "iqa",
+      "name": "IQA",
+      "shortName": "IQA",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "qalam-institute",
+      "name": "Qalam Institute",
+      "shortName": "Qalam Institute",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "isra-foundation",
+      "name": "ISRA Foundation",
+      "shortName": "ISRA Foundation",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "west-plano-musallah",
+      "name": "WEST PLANO MUSALLAH",
+      "shortName": "WEST PLANO MUSALLAH",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-society-of-mesquite",
+      "name": "Islamic Society Of Mesquite",
+      "shortName": "Islamic Society Of Mesquite",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-association-of-desoto-texas",
+      "name": "Islamic Association Of Desoto Texas",
+      "shortName": "Islamic Association Of Desoto Texas",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "mckinney-mosque",
+      "name": "McKinney Mosque",
+      "shortName": "McKinney Mosque",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "madinah-mosque-of-carrollton",
+      "name": "Madinah Mosque of Carrollton",
+      "shortName": "Madinah Mosque of Carrollton",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "grand-prairie-masjid",
+      "name": "Grand Prairie Masjid",
+      "shortName": "Grand Prairie Masjid",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-association-of-colleyville",
+      "name": "Islamic Association of Colleyville مسجد",
+      "shortName": "Islamic Association of Colleyville مسجد",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-association-of-fort-worth",
+      "name": "Islamic Association of Fort Worth مسجد",
+      "shortName": "Islamic Association of Fort Worth مسجد",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "keller-islamic-center-kic",
+      "name": "Keller Islamic Center (KIC)",
+      "shortName": "Keller Islamic Center (KIC)",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-association-mesquite",
+      "name": "Islamic Association-Mesquite",
+      "shortName": "Islamic Association-Mesquite",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "masjid-yaseen",
+      "name": "Masjid Yaseen",
+      "shortName": "Masjid Yaseen",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "mansfield-islamic-center",
+      "name": "Mansfield Islamic Center",
+      "shortName": "Mansfield Islamic Center",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "isat-center-masjid",
+      "name": "ISAT Center Masjid",
+      "shortName": "ISAT Center Masjid",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-association-of-carrollton-iac",
+      "name": "Islamic Association of Carrollton (IAC)",
+      "shortName": "Islamic Association of Carrollton (IAC)",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-society-of-denton",
+      "name": "Islamic Society of Denton",
+      "shortName": "Islamic Society of Denton",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-association-of-lewisville-flower-mound",
+      "name": "Islamic Association of Lewisville & Flower Mound",
+      "shortName": "Islamic Association of Lewisville & Flower Mound",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "duncanville-islamic-center",
+      "name": "Duncanville Islamic Center",
+      "shortName": "Duncanville Islamic Center",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research. Temporarily closed in Google Maps list"
+    },
+    {
+      "id": "dialogue-institute-dallas",
+      "name": "Dialogue Institute Dallas",
+      "shortName": "Dialogue Institute Dallas",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "princeton-islamic-center",
+      "name": "Princeton Islamic Center",
+      "shortName": "Princeton Islamic Center",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-center-of-south-dallas",
+      "name": "Islamic Center of South Dallas",
+      "shortName": "Islamic Center of South Dallas",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-association-of-north-texas-iant-masjid",
+      "name": "Islamic Association of North Texas (IANT Masjid)",
+      "shortName": "Islamic Association of North Texas (IANT Masjid)",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "mesquite-islamic-center-mic-mosque",
+      "name": "Mesquite Islamic Center (MIC Mosque)",
+      "shortName": "Mesquite Islamic Center (MIC Mosque)",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-center-of-aubrey",
+      "name": "Islamic Center of Aubrey",
+      "shortName": "Islamic Center of Aubrey",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-center-of-southlake",
+      "name": "Islamic Center of Southlake",
+      "shortName": "Islamic Center of Southlake",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-center-of-irving",
+      "name": "Islamic Center of Irving",
+      "shortName": "Islamic Center of Irving",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "icc-islamic-center-of-coppell",
+      "name": "ICC - Islamic Center of Coppell",
+      "shortName": "ICC - Islamic Center of Coppell",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "bosniaks-islamic-center-dallas-fort-worth-bic",
+      "name": "Bosniaks Islamic Center Dallas-Fort Worth (BIC)",
+      "shortName": "Bosniaks Islamic Center Dallas-Fort Worth (BIC)",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-association-of-collin-county-plano-mosque",
+      "name": "Islamic Association of Collin County (Plano Mosque)",
+      "shortName": "Islamic Association of Collin County (Plano Mosque)",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "mas-islamic-center-of-dallas",
+      "name": "MAS Islamic Center Of Dallas",
+      "shortName": "MAS Islamic Center Of Dallas",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-center-of-frisco",
+      "name": "Islamic Center of Frisco",
+      "shortName": "Islamic Center of Frisco",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "valley-ranch-islamic-center-vric",
+      "name": "Valley Ranch Islamic Center (VRIC)",
+      "shortName": "Valley Ranch Islamic Center (VRIC)",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-center-of-quad-cities",
+      "name": "Islamic Center of Quad Cities",
+      "shortName": "Islamic Center of Quad Cities",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "mckinney-islamic-association",
+      "name": "McKinney Islamic Association",
+      "shortName": "McKinney Islamic Association",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
+    },
+    {
+      "id": "islamic-association-of-allen",
+      "name": "Islamic Association of Allen",
+      "shortName": "Islamic Association of Allen",
+      "website": "",
+      "city": "",
+      "state": "TX",
+      "jumuahTimes": [],
+      "source": {
+        "type": "google maps list",
+        "url": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Imported from Ahmed Sheikh shared Google Maps list of Islamic Centers and Musallahs. Website and Jumu'ah times need research."
     }
   ]
 }
