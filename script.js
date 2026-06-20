@@ -1,6 +1,4 @@
 let directory = [];
-let lastUpdated = "";
-let collectionNotes = [];
 let activeQuery = "";
 let userLocation = null;
 
@@ -10,10 +8,8 @@ const clearButton = document.querySelector("#clear-button");
 const locationButton = document.querySelector("#location-button");
 const locationStatus = document.querySelector("#location-status");
 const statusOutput = document.querySelector("#status");
-const updatedAt = document.querySelector("#updated-at");
 const resultCount = document.querySelector("#result-count");
 const results = document.querySelector("#results");
-const heroStats = document.querySelector("#hero-stats");
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -35,19 +31,6 @@ function nextFridayLabel() {
     month: "short",
     day: "numeric",
   });
-}
-
-function checkedLabel(source) {
-  if (!source?.checkedAt) {
-    return "Imported from shared list";
-  }
-
-  const checked = new Date(`${source.checkedAt}T12:00:00`);
-  return `Checked ${checked.toLocaleDateString(undefined, {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  })}`;
 }
 
 function matchesQuery(masjid) {
@@ -157,29 +140,6 @@ function renderTimes(times) {
     .join("");
 }
 
-function renderStats() {
-  const totalTimes = directory.reduce(
-    (count, masjid) => count + (masjid.jumuahTimes?.length ?? 0),
-    0,
-  );
-  const cities = new Set(directory.map((masjid) => masjid.city).filter(Boolean));
-
-  heroStats.innerHTML = `
-    <div>
-      <dt>Masjids</dt>
-      <dd>${directory.length}</dd>
-    </div>
-    <div>
-      <dt>Times</dt>
-      <dd>${totalTimes}</dd>
-    </div>
-    <div>
-      <dt>Cities</dt>
-      <dd>${cities.size}</dd>
-    </div>
-  `;
-}
-
 function renderResults() {
   const filtered = directory.filter(matchesQuery).sort((a, b) => {
     const timeDifference = earliestPrayerMinutes(a) - earliestPrayerMinutes(b);
@@ -223,26 +183,13 @@ function renderResults() {
 
   results.innerHTML = filtered
     .map((masjid) => {
-      const source = masjid.source ?? {};
-      const needsRenderedCheck = Boolean(source.requiresRenderedCheck);
-      const needsResearch =
-        !masjid.jumuahTimes?.length ||
-        !masjid.website ||
-        source.type === "google maps list";
       const location =
         masjid.address ?? [masjid.city, masjid.state].filter(Boolean).join(", ");
-      const badgeClass =
-        needsRenderedCheck || needsResearch ? "badge stale" : "badge";
-      const badgeLabel = needsResearch
-        ? "Needs research"
-        : needsRenderedCheck
-          ? "Rendered check"
-          : "Website verified";
       const websiteLink = masjid.website
         ? `<a class="directions" href="${escapeHtml(
             masjid.website,
           )}" target="_blank" rel="noreferrer">Visit website</a>`
-        : '<span class="directions pending">Website pending</span>';
+        : "";
 
       return `
         <article class="masjid-card">
@@ -258,14 +205,9 @@ function renderResults() {
             <p class="meta">${escapeHtml(
               earliestPrayerLabel(masjid),
             )} · Next Jumu'ah: ${nextFriday}</p>
-            <p class="note">${escapeHtml(masjid.notes)}</p>
           </div>
           <div class="side">
-            <span class="${badgeClass}">
-              ${badgeLabel}
-            </span>
             <span class="distance">${escapeHtml(distanceLabel(masjid))}</span>
-            <span class="checked">${escapeHtml(checkedLabel(source))}</span>
             ${websiteLink}
           </div>
         </article>
@@ -284,15 +226,8 @@ async function loadDirectory() {
 
     const data = await response.json();
     directory = data.masjids ?? [];
-    lastUpdated = data.lastUpdated ?? "";
-    collectionNotes = data.collectionNotes ?? [];
 
-    updatedAt.textContent = lastUpdated
-      ? `Last updated ${lastUpdated}. ${collectionNotes[0] ?? ""}`
-      : collectionNotes[0] ?? "";
-    statusOutput.textContent =
-      "Showing verified times and imported masjids that need research.";
-    renderStats();
+    statusOutput.textContent = "Showing masjids near DFW.";
     renderResults();
   } catch (error) {
     statusOutput.textContent =
@@ -306,7 +241,7 @@ form.addEventListener("submit", (event) => {
   activeQuery = searchInput.value.trim().toLowerCase();
   statusOutput.textContent = activeQuery
     ? `Filtering results for "${searchInput.value.trim()}".`
-    : "Showing verified times and imported masjids that need research.";
+    : "Showing masjids near DFW.";
   renderResults();
 });
 
@@ -314,15 +249,14 @@ searchInput.addEventListener("input", () => {
   activeQuery = searchInput.value.trim().toLowerCase();
   statusOutput.textContent = activeQuery
     ? `Filtering results for "${searchInput.value.trim()}".`
-    : "Showing verified times and imported masjids that need research.";
+    : "Showing masjids near DFW.";
   renderResults();
 });
 
 clearButton.addEventListener("click", () => {
   searchInput.value = "";
   activeQuery = "";
-  statusOutput.textContent =
-    "Showing verified times and imported masjids that need research.";
+  statusOutput.textContent = "Showing masjids near DFW.";
   renderResults();
 });
 

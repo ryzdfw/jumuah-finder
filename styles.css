@@ -2,8 +2,8 @@
   color-scheme: light;
   --ink: #14231f;
   --muted: #63736e;
-  --paper: #f6f4ee;
-  --surface: #fffdf8;
+  --paper: #f8f7f3;
+  --surface: #ffffff;
   --surface-strong: #ffffff;
   --line: #e1ddd1;
   --accent: #0f6b55;
@@ -12,8 +12,7 @@
   --gold: #d49b36;
   --gold-soft: #fff1d2;
   --warning: #a56000;
-  --shadow: 0 22px 55px rgba(20, 35, 31, 0.12);
-  --shadow-soft: 0 12px 28px rgba(20, 35, 31, 0.08);
+  --shadow: 0 16px 34px rgba(20, 35, 31, 0.08);
 }
 
 * {
@@ -27,27 +26,11 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background:
-    radial-gradient(circle at 14% 8%, rgba(212, 155, 54, 0.2), transparent 28rem),
-    radial-gradient(circle at 88% 0%, rgba(15, 107, 85, 0.17), transparent 30rem),
-    linear-gradient(180deg, #fbf7ed 0%, var(--paper) 46%, #eef4ef 100%);
+  background: var(--paper);
   color: var(--ink);
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
-}
-
-body::before {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  content: "";
-  background-image:
-    linear-gradient(rgba(15, 107, 85, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(15, 107, 85, 0.04) 1px, transparent 1px);
-  background-size: 42px 42px;
-  mask-image: linear-gradient(180deg, #000 0%, transparent 72%);
 }
 
 button,
@@ -155,44 +138,24 @@ input:focus {
 .finder {
   display: grid;
   grid-template-columns: minmax(0, 1.22fr) minmax(320px, 0.78fr);
-  gap: 18px;
+  gap: 20px;
   align-items: stretch;
-  min-height: 460px;
 }
 
 .intro,
 .search-panel,
-.toolbar,
 .masjid-card {
-  border: 1px solid rgba(225, 221, 209, 0.95);
+  border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 253, 248, 0.88);
+  background: var(--surface);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(14px);
 }
 
 .intro {
-  position: relative;
   display: flex;
-  overflow: hidden;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(30px, 6vw, 64px);
-}
-
-.intro::after {
-  position: absolute;
-  right: clamp(18px, 5vw, 48px);
-  bottom: clamp(18px, 4vw, 38px);
-  width: 128px;
-  height: 128px;
-  border: 1px solid rgba(15, 107, 85, 0.14);
-  border-radius: 50%;
-  content: "";
-  background:
-    linear-gradient(90deg, transparent 48%, rgba(15, 107, 85, 0.13) 49%, rgba(15, 107, 85, 0.13) 51%, transparent 52%),
-    linear-gradient(0deg, transparent 48%, rgba(15, 107, 85, 0.13) 49%, rgba(15, 107, 85, 0.13) 51%, transparent 52%);
-  opacity: 0.75;
+  padding: clamp(28px, 5vw, 56px);
 }
 
 .search-panel {
@@ -225,7 +188,7 @@ p {
 }
 
 h1 {
-  max-width: 9ch;
+  max-width: 11ch;
   margin-bottom: 18px;
   color: var(--accent-dark);
   font-size: clamp(3.4rem, 8vw, 6.4rem);
@@ -255,9 +218,7 @@ h3 {
 .status,
 .meta,
 .address,
-.count,
-.note,
-.checked {
+.count {
   color: var(--muted);
   line-height: 1.6;
 }
@@ -266,37 +227,6 @@ h3 {
   max-width: 50ch;
   margin-bottom: 0;
   font-size: 1.08rem;
-}
-
-.hero-stats {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-  max-width: 520px;
-  margin: 30px 0 0;
-}
-
-.hero-stats div {
-  border: 1px solid rgba(15, 107, 85, 0.12);
-  border-radius: 8px;
-  padding: 14px;
-  background: rgba(255, 255, 255, 0.58);
-}
-
-.hero-stats dt {
-  color: var(--muted);
-  font-size: 0.74rem;
-  font-weight: 850;
-  text-transform: uppercase;
-}
-
-.hero-stats dd {
-  margin: 4px 0 0;
-  color: var(--accent-dark);
-  font-size: 1.45rem;
-  font-weight: 950;
 }
 
 label {
@@ -321,27 +251,6 @@ label {
 .location-status {
   min-height: 0;
   margin-top: 10px;
-  color: var(--muted);
-  line-height: 1.5;
-}
-
-.toolbar {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 18px;
-  align-items: center;
-  margin: 20px 0;
-  padding: 18px 20px;
-  box-shadow: var(--shadow-soft);
-}
-
-.toolbar .label {
-  display: block;
-  margin-bottom: 2px;
-}
-
-.toolbar-note {
-  margin: 0;
   color: var(--muted);
   line-height: 1.5;
 }
@@ -422,42 +331,13 @@ label {
   font-weight: 750;
 }
 
-.note {
-  max-width: 68ch;
-  margin: 10px 0 0;
-  font-size: 0.92rem;
-}
-
 .side {
   min-width: 148px;
   text-align: right;
 }
 
-.badge {
-  display: inline-flex;
-  border-radius: 999px;
-  padding: 6px 10px;
-  background: #edf5f1;
-  color: var(--accent-dark);
-  font-size: 0.82rem;
-  font-weight: 850;
-}
-
-.badge.stale,
-.badge.rendered {
-  background: var(--gold-soft);
-  color: var(--warning);
-}
-
-.checked {
-  display: block;
-  margin-top: 10px;
-  font-size: 0.88rem;
-}
-
 .distance {
   display: block;
-  margin-top: 12px;
   color: var(--accent-dark);
   font-size: 1.2rem;
   font-weight: 950;
@@ -487,7 +367,6 @@ label {
   }
 
   .finder,
-  .toolbar,
   .masjid-card {
     grid-template-columns: 1fr;
   }
@@ -500,12 +379,6 @@ label {
     min-height: 360px;
   }
 
-  .intro::after {
-    width: 92px;
-    height: 92px;
-  }
-
-  .hero-stats,
   .search-row {
     grid-template-columns: 1fr;
   }
