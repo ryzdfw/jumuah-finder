@@ -39,7 +39,7 @@ function nextFridayLabel() {
 
 function checkedLabel(source) {
   if (!source?.checkedAt) {
-    return "Verification date unavailable";
+    return "Imported from shared list";
   }
 
   const checked = new Date(`${source.checkedAt}T12:00:00`);
@@ -225,9 +225,24 @@ function renderResults() {
     .map((masjid) => {
       const source = masjid.source ?? {};
       const needsRenderedCheck = Boolean(source.requiresRenderedCheck);
+      const needsResearch =
+        !masjid.jumuahTimes?.length ||
+        !masjid.website ||
+        source.type === "google maps list";
       const location =
         masjid.address ?? [masjid.city, masjid.state].filter(Boolean).join(", ");
-      const badgeClass = needsRenderedCheck ? "badge rendered" : "badge";
+      const badgeClass =
+        needsRenderedCheck || needsResearch ? "badge stale" : "badge";
+      const badgeLabel = needsResearch
+        ? "Needs research"
+        : needsRenderedCheck
+          ? "Rendered check"
+          : "Website verified";
+      const websiteLink = masjid.website
+        ? `<a class="directions" href="${escapeHtml(
+            masjid.website,
+          )}" target="_blank" rel="noreferrer">Visit website</a>`
+        : '<span class="directions pending">Website pending</span>';
 
       return `
         <article class="masjid-card">
@@ -247,15 +262,11 @@ function renderResults() {
           </div>
           <div class="side">
             <span class="${badgeClass}">
-              ${needsRenderedCheck ? "Rendered check" : "Website verified"}
+              ${badgeLabel}
             </span>
             <span class="distance">${escapeHtml(distanceLabel(masjid))}</span>
             <span class="checked">${escapeHtml(checkedLabel(source))}</span>
-            <a class="directions" href="${escapeHtml(
-              masjid.website,
-            )}" target="_blank" rel="noreferrer">
-              Visit website
-            </a>
+            ${websiteLink}
           </div>
         </article>
       `;
@@ -279,7 +290,8 @@ async function loadDirectory() {
     updatedAt.textContent = lastUpdated
       ? `Last updated ${lastUpdated}. ${collectionNotes[0] ?? ""}`
       : collectionNotes[0] ?? "";
-    statusOutput.textContent = "Showing all verified Jumu'ah times.";
+    statusOutput.textContent =
+      "Showing verified times and imported masjids that need research.";
     renderStats();
     renderResults();
   } catch (error) {
@@ -294,7 +306,7 @@ form.addEventListener("submit", (event) => {
   activeQuery = searchInput.value.trim().toLowerCase();
   statusOutput.textContent = activeQuery
     ? `Filtering results for "${searchInput.value.trim()}".`
-    : "Showing all verified Jumu'ah times.";
+    : "Showing verified times and imported masjids that need research.";
   renderResults();
 });
 
@@ -302,14 +314,15 @@ searchInput.addEventListener("input", () => {
   activeQuery = searchInput.value.trim().toLowerCase();
   statusOutput.textContent = activeQuery
     ? `Filtering results for "${searchInput.value.trim()}".`
-    : "Showing all verified Jumu'ah times.";
+    : "Showing verified times and imported masjids that need research.";
   renderResults();
 });
 
 clearButton.addEventListener("click", () => {
   searchInput.value = "";
   activeQuery = "";
-  statusOutput.textContent = "Showing all verified Jumu'ah times.";
+  statusOutput.textContent =
+    "Showing verified times and imported masjids that need research.";
   renderResults();
 });
 
