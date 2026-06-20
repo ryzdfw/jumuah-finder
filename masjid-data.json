@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "lastUpdated": "2026-06-20",
+  "collectionNotes": [
+    "For masjids whose prayer widgets do not expose Jumu'ah in static page text, verify the rendered homepage with a browser screenshot before marking times unavailable.",
+    "American Imams Academy is a known case: Jumu'ah appears visually under Isha on the rendered homepage but is missed by static text extraction."
+  ],
+  "masjids": [
+    {
+      "id": "epic-masjid",
+      "name": "East Plano Islamic Center",
+      "shortName": "EPIC Masjid",
+      "website": "https://epicmasjid.org/",
+      "address": "4700 14th St, Plano, TX 75074",
+      "city": "Plano",
+      "state": "TX",
+      "coordinates": {
+        "latitude": 33.011528,
+        "longitude": -96.645973,
+        "source": "OpenStreetMap geocode"
+      },
+      "jumuahTimes": [
+        {
+          "label": "1st Jumu'ah",
+          "time": "1:45 PM"
+        },
+        {
+          "label": "2nd Jumu'ah",
+          "time": "3:15 PM"
+        }
+      ],
+      "source": {
+        "type": "website",
+        "url": "https://epicmasjid.org/",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Public homepage exposed these Jumu'ah times without login."
+    },
+    {
+      "id": "dmcc-masjid",
+      "name": "Dallas Muslims Community Center",
+      "shortName": "DMCC",
+      "website": "https://www.dmccmasjid.org/",
+      "address": "7340 Hwy 78 Unit 280, Sachse, TX 75048",
+      "city": "Sachse",
+      "state": "TX",
+      "coordinates": {
+        "latitude": 32.9695497,
+        "longitude": -96.6061036,
+        "source": "OpenStreetMap road-segment geocode",
+        "approximate": true
+      },
+      "jumuahTimes": [
+        {
+          "label": "Khutbah",
+          "time": "1:45 PM"
+        }
+      ],
+      "source": {
+        "type": "website",
+        "url": "https://www.dmccmasjid.org/",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Public homepage prayer-time section lists Jummah Khutbah at 1:45 PM."
+    },
+    {
+      "id": "sachse-muslim-society",
+      "name": "Sachse Muslim Society",
+      "shortName": "Sachse Masjid",
+      "website": "https://sachsemasjid.org/",
+      "address": "2416 3rd St, Sachse, TX 75048",
+      "city": "Sachse",
+      "state": "TX",
+      "coordinates": {
+        "latitude": 32.9788158,
+        "longitude": -96.5998421,
+        "source": "OpenStreetMap geocode"
+      },
+      "jumuahTimes": [
+        {
+          "label": "1st Jumu'ah",
+          "time": "1:30 PM"
+        },
+        {
+          "label": "2nd Jumu'ah",
+          "time": "2:20 PM"
+        },
+        {
+          "label": "3rd Jumu'ah",
+          "time": "3:15 PM"
+        }
+      ],
+      "source": {
+        "type": "website",
+        "url": "https://sachsemasjid.org/",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Public homepage lists 1st, 2nd, and 3rd Jumuah times. The site shows 01:30, 02:20, and 03:15; stored here as PM based on Jumu'ah context."
+    },
+    {
+      "id": "american-imams-academy",
+      "name": "American Imams Academy",
+      "shortName": "Imams Academy",
+      "website": "https://imamsacademy.net/",
+      "address": "5206 Ben Davis Rd, Sachse, TX 75048",
+      "city": "Sachse",
+      "state": "TX",
+      "coordinates": {
+        "latitude": 32.9706984,
+        "longitude": -96.6009565,
+        "source": "OpenStreetMap geocode"
+      },
+      "jumuahTimes": [
+        {
+          "label": "1st Jumu'ah",
+          "time": "1:30 PM"
+        },
+        {
+          "label": "2nd Jumu'ah",
+          "time": "2:30 PM"
+        }
+      ],
+      "source": {
+        "type": "rendered website",
+        "url": "https://imamsacademy.net/",
+        "checkedAt": "2026-06-20",
+        "verificationMethod": "browser full-page screenshot",
+        "requiresRenderedCheck": true
+      },
+      "notes": "The rendered homepage prayer table shows Jumu'ah under Isha as 1:30 PM and 2:30 PM. Static text extraction did not expose this line, so it was verified from a full-page browser screenshot."
+    },
+    {
+      "id": "islamic-center-of-wylie",
+      "name": "Islamic Center of Wylie",
+      "shortName": "ICW",
+      "website": "https://icwtx.org/",
+      "address": "3990 Lakeway Dr Suite #111, St Paul, TX 75098",
+      "city": "Wylie",
+      "state": "TX",
+      "coordinates": {
+        "latitude": 33.0486646,
+        "longitude": -96.5669941,
+        "source": "OpenStreetMap geocode"
+      },
+      "jumuahTimes": [
+        {
+          "label": "Jumu'ah",
+          "time": "1:45 PM"
+        },
+        {
+          "label": "Iqamah",
+          "time": "2:15 PM"
+        }
+      ],
+      "source": {
+        "type": "website",
+        "url": "https://icwtx.org/",
+        "checkedAt": "2026-06-20"
+      },
+      "notes": "Public homepage lists Jumu'ah at 1:45 PM and Iqamah at 2:15 PM."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jumuah Finder</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar" aria-label="Site">
+        <a class="brand" href="./" aria-label="Jumuah Finder home">
+          <span class="brand-mark" aria-hidden="true">JF</span>
+          <span>Jumuah Finder</span>
+        </a>
+        <span class="topbar-note">Dallas-area pilot</span>
+      </header>
+
+      <section class="finder" aria-labelledby="page-title">
+        <div class="intro">
+          <p class="eyebrow">Friday prayer nearby</p>
+          <h1 id="page-title">Jumuah Finder</h1>
+          <p class="summary">
+            A simple local directory of verified Jumu'ah times for nearby
+            masjids, built from public masjid websites.
+          </p>
+          <dl id="hero-stats" class="hero-stats" aria-label="Directory summary">
+            <div>
+              <dt>Masjids</dt>
+              <dd>--</dd>
+            </div>
+            <div>
+              <dt>Times</dt>
+              <dd>--</dd>
+            </div>
+            <div>
+              <dt>Area</dt>
+              <dd>DFW</dd>
+            </div>
+          </dl>
+        </div>
+
+        <form id="search-form" class="search-panel">
+          <p class="panel-title">Find a masjid</p>
+          <label for="search">Search by masjid or city</label>
+          <div class="search-row">
+            <input
+              id="search"
+              name="search"
+              autocomplete="off"
+              placeholder="Try Wylie, Sachse, or EPIC"
+            >
+            <button type="submit">Filter</button>
+          </div>
+          <button id="clear-button" class="secondary" type="button">Show all</button>
+          <button id="location-button" class="secondary location-button" type="button">
+            Use my location
+          </button>
+          <p id="location-status" class="location-status" aria-live="polite">
+            Distance is hidden until location access is allowed.
+          </p>
+          <p id="status" class="status" aria-live="polite">
+            Loading verified Jumu'ah times...
+          </p>
+        </form>
+      </section>
+
+      <section class="toolbar" aria-label="Directory status">
+        <div>
+          <span class="label">Data source</span>
+          <strong>Public masjid websites</strong>
+        </div>
+        <p id="updated-at" class="toolbar-note"></p>
+      </section>
+
+      <section aria-labelledby="results-title">
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow">Verified directory</p>
+            <h2 id="results-title">Jumu'ah times</h2>
+          </div>
+          <p id="result-count" class="count"></p>
+        </div>
+        <div id="results" class="results"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
