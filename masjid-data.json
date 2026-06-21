@@ -165,16 +165,24 @@
       "id": "sufaraa",
       "name": "Sufaraa",
       "shortName": "Sufaraa",
-      "website": "",
+      "website": "https://sufaraacenter.org/daily-prayer/",
       "address": "704 N Preston Rd, Celina, TX 75009",
       "city": "Celina",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "Jumu'ah Khutbah",
+          "time": "2:00 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website widget",
+        "url": "https://sufaraacenter.org/daily-prayer/",
+        "checkedAt": "2026-06-21",
+        "widgetUrl": "https://web-widgets.madinaapps.com/sufaraa/dailyprayertime?",
+        "googleMapsListCheckedAt": "2026-06-20"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Official daily prayer page embeds a MadinaApps widget for Prosper prayer timings; the widget lists Jummah Khutbah at 2:00 PM and iqamah at 2:20 PM."
     },
     {
       "id": "islamic-centers-of-prosper-and-celina-icpc",
@@ -201,15 +209,23 @@
       "id": "sufaraa-mckinney",
       "name": "Sufaraa - Mckinney",
       "shortName": "Sufaraa - Mckinney",
-      "website": "",
-      "city": "",
+      "website": "https://sufaraacenter.org/daily-prayer/",
+      "address": "2220 Bush Dr, McKinney, TX 75070",
+      "city": "McKinney",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "Jumu'ah",
+          "time": "2:00 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "url": "https://sufaraacenter.org/daily-prayer/",
+        "checkedAt": "2026-06-21",
+        "googleMapsListCheckedAt": "2026-06-20"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Official daily prayer page states Salat ul Jumma at Mckinney 2:00 PM."
     },
     {
       "id": "islamic-association-of-tarrant-county",
@@ -249,43 +265,74 @@
       "id": "salaam",
       "name": "Salaam",
       "shortName": "Salaam",
-      "website": "",
-      "city": "",
+      "website": "https://masjid-salaam.com/",
+      "address": "1219 Salma Jameel Ct, Irving, TX 75061",
+      "city": "Irving",
       "state": "TX",
       "jumuahTimes": [],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "url": "https://masjid-salaam.com/",
+        "checkedAt": "2026-06-21",
+        "googleMapsListCheckedAt": "2026-06-20"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Official homepage explicitly says Masjid Salaam does not have any Juma Salah; record intentionally has no Jumu'ah times."
     },
     {
       "id": "masjid-e-sajideen",
       "name": "Masjid-e-Sajideen",
       "shortName": "Masjid-e-Sajideen",
-      "website": "",
-      "city": "",
+      "website": "https://www.masjidesajideen.org/",
+      "city": "Frisco",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "Jumu'ah 1",
+          "time": "2:15 PM"
+        },
+        {
+          "label": "Jumu'ah 2",
+          "time": "2:45 PM"
+        },
+        {
+          "label": "Jumu'ah 3",
+          "time": "3:15 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website widget",
+        "url": "https://www.masjidesajideen.org/",
+        "checkedAt": "2026-06-21",
+        "widgetUrl": "https://timing.athanplus.com/masjid/widgets/monthly?theme=1&masjid_id=9L2Mm3KZ&action=next&date=2026-06-21",
+        "googleMapsListCheckedAt": "2026-06-20"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Official homepage embeds an AthanPlus widget for masjid_id 9L2Mm3KZ; the linked monthly widget lists Jumu'ah times at 2:15 PM, 2:45 PM, and 3:15 PM."
     },
     {
       "id": "imaan-melissa",
       "name": "Imaan Melissa",
       "shortName": "Imaan Melissa",
-      "website": "",
-      "city": "",
+      "website": "https://imaanmasjid.org/",
+      "address": "1010 Milrany Ln, Melissa, TX 75454",
+      "city": "Melissa",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "1st Jumu'ah",
+          "time": "2:00 PM"
+        },
+        {
+          "label": "2nd Jumu'ah",
+          "time": "3:30 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website pdf",
+        "url": "https://imaanmasjid.org/letters/Students%20Jummah%20Excuse%20Letter.pdf",
+        "checkedAt": "2026-06-21",
+        "googleMapsListCheckedAt": "2026-06-20"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Official student Jummah excuse letter says Imaan Masjid of Melissa has two Friday congregations starting at 2:00 PM and 3:30 PM."
     },
     {
       "id": "dallas-diyanet-mosque",
@@ -339,15 +386,27 @@
       "id": "islaminspanish-dallas-outreach-center",
       "name": "IslamInSpanish Dallas Outreach Center",
       "shortName": "IslamInSpanish Dallas Outreach Center",
-      "website": "",
-      "city": "",
+      "website": "https://www.islaminspanish.org/dallas-events-1",
+      "address": "13021 Coit Rd #108, Dallas, TX 75240",
+      "city": "Dallas",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "Spanish Jumu'ah",
+          "time": "1:30 PM"
+        },
+        {
+          "label": "English Jumu'ah",
+          "time": "2:05 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website event",
+        "url": "https://www.islaminspanish.org/centro-islamico-calendar/7jsjbk7gjem79nz-c42f7-2s7yf-43ap5-taz44-eaerz-4kymc-t26dk-yja3r-842ae-43l4w-7yjsd-ll7ar-kzdr6-67ne7-7cm4e-daml3-ydm8j-hpnx2-wxw6j",
+        "checkedAt": "2026-06-21",
+        "googleMapsListCheckedAt": "2026-06-20"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Official IslamInSpanish event page says there are two Jummuah congregations, Spanish at 1:30 PM and English at 2:05 PM. Google Business Profile lists the Dallas Outreach Center at 13021 Coit Rd #108."
     },
     {
       "id": "anna-islamic-center",
@@ -367,15 +426,27 @@
       "id": "ar-rahman-mosque",
       "name": "Ar Rahman Mosque",
       "shortName": "Ar Rahman Mosque",
-      "website": "",
-      "city": "",
+      "website": "https://www.masjidal-rahman.org/",
+      "address": "1901 Kelly Blvd, Carrollton, TX 75006",
+      "city": "Carrollton",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "Khutbah",
+          "time": "1:30 PM"
+        },
+        {
+          "label": "Prayer",
+          "time": "2:00 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "url": "https://www.masjidal-rahman.org/",
+        "checkedAt": "2026-06-21",
+        "googleMapsListCheckedAt": "2026-06-20"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Official homepage lists Jummah Prayer with khutbah at 1:30 PM and prayer at 2:00 PM."
     },
     {
       "id": "islamic-center-of-rowlett",
