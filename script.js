@@ -130,12 +130,14 @@ function renderTimes(times) {
     return '<li class="time-pill stale">Needs manual check</li>';
   }
 
+  const showLabels = times.length > 1;
+
   return times
     .map(
       (entry) =>
-        `<li class="time-pill"><span>${escapeHtml(entry.label)}</span>${escapeHtml(
-          entry.time,
-        )}</li>`,
+        `<li class="time-pill">${
+          showLabels ? `<span>${escapeHtml(entry.label)}</span>` : ""
+        }${escapeHtml(entry.time)}</li>`,
     )
     .join("");
 }
