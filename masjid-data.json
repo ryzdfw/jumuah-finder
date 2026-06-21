@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-06-20",
+  "lastUpdated": "2026-06-21",
   "collectionNotes": [
     "Imported additional DFW Islamic centers and musallahs from a shared Google Maps list; entries without websites or times are marked for research.",
     "For masjids whose prayer widgets do not expose Jumu'ah in static page text, verify the rendered homepage with a browser screenshot before marking times unavailable.",
@@ -311,15 +311,29 @@
       "id": "masjid-salahadeen",
       "name": "Masjid Salahadeen",
       "shortName": "Masjid Salahadeen",
-      "website": "",
-      "city": "",
+      "website": "https://masjidsalahadeen.org/",
+      "address": "4030 Split Trail Rd, Plano, TX 75074",
+      "city": "Plano",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "1st Jumu'ah",
+          "time": "1:45 PM"
+        },
+        {
+          "label": "2nd Jumu'ah",
+          "time": "2:45 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website widget",
+        "url": "https://masjidsalahadeen.org/",
+        "checkedAt": "2026-06-21",
+        "widgetUrl": "https://masjidbox.com/w/sMJXRa1ZGN9LX4xLRMS15?i=0&v=2.1.1",
+        "googleMapsListUrl": "https://maps.app.goo.gl/CBsgN9ZWMAqCLKLE7",
+        "googleMapsListCheckedAt": "2026-06-20"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Official website embeds a Masjidbox prayer-times widget that lists Jumuah Khutbah at 1:45 PM and 2:45 PM."
     },
     {
       "id": "islaminspanish-dallas-outreach-center",
