@@ -821,15 +821,25 @@
       "id": "makkah-masjid-garland-mosque",
       "name": "Makkah Masjid (Garland Mosque)",
       "shortName": "Makkah Masjid (Garland Mosque)",
-      "website": "",
+      "website": "https://makkahmasjid.net/",
       "city": "",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "1st Khutba",
+          "time": "2:10 PM"
+        },
+        {
+          "label": "2nd Khutba",
+          "time": "2:40 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-21",
+        "url": "https://makkahmasjid.net/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Official homepage prayer table script hardcodes Jumu'ah Khutba 2:10 PM/2:40 PM."
     },
     {
       "id": "masjid-faizan-e-madinah-wylie",
@@ -1191,13 +1201,22 @@
       "website": "https://www.ialfm.org/",
       "city": "",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "Khutba",
+          "time": "1:30 PM"
+        },
+        {
+          "label": "Iqama",
+          "time": "2:00 PM"
+        }
+      ],
       "source": {
         "type": "website",
-        "checkedAt": "2026-06-20",
-        "url": "https://www.ialfm.org/"
+        "checkedAt": "2026-06-21",
+        "url": "https://us.mohid.co/tx/dallas/ialfm/masjid/widget/api/index/?m=prayertimings"
       },
-      "notes": "Website found. Static homepage text did not expose Jumu'ah times during this pass; needs rendered/manual verification."
+      "notes": "Official homepage embeds a Mohid prayer widget listing Friday Khutba 1 at 1:30 PM and Friday Iqama 1 at 2:00 PM."
     },
     {
       "id": "duncanville-islamic-center",
@@ -1262,13 +1281,22 @@
       "website": "https://iant.com/",
       "city": "",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "1st",
+          "time": "1:45 PM"
+        },
+        {
+          "label": "2nd",
+          "time": "3:00 PM"
+        }
+      ],
       "source": {
         "type": "website",
-        "checkedAt": "2026-06-20",
-        "url": "https://iant.com/"
+        "checkedAt": "2026-06-21",
+        "url": "https://timing.athanplus.com/masjid/widgets/embed?theme=1&masjid_id=xdy03lAX"
       },
-      "notes": "Website found. Static homepage text says IANT offers two Jumuah prayers at the main location and one at the ICNA Center, but the times were not exposed in static page text during this pass."
+      "notes": "Official homepage embeds an AthanPlus widget listing Jumuah 1 at 1:45 PM and Jumuah 2 at 3:00 PM."
     },
     {
       "id": "mesquite-islamic-center-mic-mosque",
@@ -1416,13 +1444,26 @@
       "website": "https://www.friscomasjid.org/",
       "city": "",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "1st Khutba",
+          "time": "1:45 PM"
+        },
+        {
+          "label": "2nd Khutba",
+          "time": "3:00 PM"
+        },
+        {
+          "label": "3rd Khutba",
+          "time": "4:00 PM"
+        }
+      ],
       "source": {
         "type": "website",
-        "checkedAt": "2026-06-20",
-        "url": "https://www.friscomasjid.org/"
+        "checkedAt": "2026-06-21",
+        "url": "https://services.madinaapps.com/kiosk-rest/clients/242/prayerTimes"
       },
-      "notes": "Website found. Static homepage text notes Friday access opens early for Jummah, but did not expose Jumu'ah times during this pass; needs rendered/manual verification."
+      "notes": "Official homepage embeds the MadinaApps prayer widget. Public widget API lists khutba times at 1:45 PM, 3:00 PM, and 4:00 PM, with iqamah at 2:10 PM, 3:25 PM, and 4:25 PM."
     },
     {
       "id": "valley-ranch-islamic-center-vric",
@@ -1470,13 +1511,26 @@
       "website": "https://www.mckinneymasjid.org/",
       "city": "",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "1st",
+          "time": "1:45 PM"
+        },
+        {
+          "label": "2nd",
+          "time": "2:45 PM"
+        },
+        {
+          "label": "3rd",
+          "time": "3:45 PM"
+        }
+      ],
       "source": {
         "type": "website",
-        "checkedAt": "2026-06-20",
-        "url": "https://www.mckinneymasjid.org/"
+        "checkedAt": "2026-06-21",
+        "url": "https://timing.athanplus.com/masjid/widgets/monthly?theme=1&masjid_id=wLVzDqLJ&jumuah3=2:45PM"
       },
-      "notes": "Website found. Public homepage states MIA offers 3 Jumu'ah khutbah times, but the actual times were not exposed in static page text and need rendered/manual verification."
+      "notes": "Official prayer widget lists Jumu'ah 1 at 1:45 PM, Jumu'ah 2 at 2:45 PM, and Jumu'ah 3 at 3:45 PM."
     },
     {
       "id": "islamic-association-of-allen",
