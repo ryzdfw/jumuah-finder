@@ -22,11 +22,11 @@
       },
       "jumuahTimes": [
         {
-          "label": "1st Jumu'ah",
+          "label": "1st",
           "time": "1:45 PM"
         },
         {
-          "label": "2nd Jumu'ah",
+          "label": "2nd",
           "time": "3:15 PM"
         }
       ],
@@ -54,7 +54,7 @@
       },
       "jumuahTimes": [
         {
-          "label": "Khutbah",
+          "label": "Jumu'ah",
           "time": "1:45 PM"
         }
       ],
@@ -81,15 +81,15 @@
       },
       "jumuahTimes": [
         {
-          "label": "1st Jumu'ah",
+          "label": "1st",
           "time": "1:30 PM"
         },
         {
-          "label": "2nd Jumu'ah",
+          "label": "2nd",
           "time": "2:20 PM"
         },
         {
-          "label": "3rd Jumu'ah",
+          "label": "3rd",
           "time": "3:15 PM"
         }
       ],
@@ -116,11 +116,11 @@
       },
       "jumuahTimes": [
         {
-          "label": "1st Jumu'ah",
+          "label": "1st",
           "time": "1:30 PM"
         },
         {
-          "label": "2nd Jumu'ah",
+          "label": "2nd",
           "time": "2:30 PM"
         }
       ],
@@ -151,10 +151,6 @@
         {
           "label": "Jumu'ah",
           "time": "1:45 PM"
-        },
-        {
-          "label": "Iqamah",
-          "time": "2:15 PM"
         }
       ],
       "source": {
@@ -184,16 +180,22 @@
       "id": "islamic-centers-of-prosper-and-celina-icpc",
       "name": "Islamic Centers of Prosper and Celina - ICPC",
       "shortName": "Islamic Centers of Prosper and Celina - ICPC",
-      "website": "",
+      "website": "https://icpcmasjid.org/",
       "address": "2616 S Legacy Dr, Celina, TX 75009",
       "city": "Celina",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "Jumu'ah",
+          "time": "2:00 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://icpcmasjid.org/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Public homepage lists ICP Jumma khutbahs at 2:00 PM, 3:00 PM, and 4:00 PM, and Islamic Center of West Celina (2616 S Legacy Dr) khutbah at 2:00 PM. This record uses the West Celina address."
     },
     {
       "id": "sufaraa-mckinney",
@@ -213,15 +215,21 @@
       "id": "islamic-association-of-tarrant-county",
       "name": "Islamic Association of Tarrant County",
       "shortName": "Islamic Association of Tarrant County",
-      "website": "",
+      "website": "https://iatcmasjid.org/iatc/Home",
       "city": "",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "Jumu'ah",
+          "time": "1:25 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://iatcmasjid.org/iatc/Home"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Public events section lists Friday Khutbah from 1:25 PM to 2:25 PM."
     },
     {
       "id": "dar-el-quran",
@@ -283,15 +291,21 @@
       "id": "dallas-diyanet-mosque",
       "name": "Dallas Diyanet Mosque",
       "shortName": "Dallas Diyanet Mosque",
-      "website": "",
+      "website": "https://tarfdallas.com/",
       "city": "",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "Jumu'ah",
+          "time": "2:00 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://tarfdallas.com/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Public homepage lists Jumu'ah Friday Prayer with khutbah at 2:00 PM and prayer at 2:30 PM."
     },
     {
       "id": "masjid-salahadeen",
@@ -661,15 +675,21 @@
       "id": "masjid-al-islam-dallas-tx",
       "name": "Masjid al-Islam - Dallas, TX",
       "shortName": "Masjid al-Islam - Dallas, TX",
-      "website": "",
+      "website": "https://masjidalislam.org/",
       "city": "",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "Jumu'ah",
+          "time": "1:45 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://masjidalislam.org/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Public homepage lists Jumu'ah Salat at 1:45 PM and notes it is held at the Beacon of Light Community Outreach Center during new masjid construction."
     },
     {
       "id": "euless-musalla",
@@ -899,15 +919,16 @@
       "id": "qalam-institute",
       "name": "Qalam Institute",
       "shortName": "Qalam Institute",
-      "website": "",
+      "website": "https://www.qalam.institute/",
       "city": "",
       "state": "TX",
       "jumuahTimes": [],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://www.qalam.institute/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Website found. Static homepage text did not expose Jumu'ah times during this pass; needs rendered/manual verification if this location should remain in the finder."
     },
     {
       "id": "isra-foundation",
@@ -1039,15 +1060,21 @@
       "id": "keller-islamic-center-kic",
       "name": "Keller Islamic Center (KIC)",
       "shortName": "Keller Islamic Center (KIC)",
-      "website": "",
+      "website": "https://kellerislamiccenter.org/",
       "city": "",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "Jumu'ah",
+          "time": "1:35 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://kellerislamiccenter.org/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Public homepage lists Jumm'ah khutbah at 1:35 PM and iqama at 2:05 PM."
     },
     {
       "id": "islamic-association-mesquite",
@@ -1067,15 +1094,25 @@
       "id": "masjid-yaseen",
       "name": "Masjid Yaseen",
       "shortName": "Masjid Yaseen",
-      "website": "",
+      "website": "https://masjidyaseen.org/",
       "city": "",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "1st",
+          "time": "1:30 PM"
+        },
+        {
+          "label": "2nd",
+          "time": "3:00 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://masjidyaseen.org/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Public homepage lists 1st Jumu'ah at 1:30 PM with iqamah at 2:15 PM, and 2nd Jumu'ah at 3:00 PM with iqamah at 3:10 PM."
     },
     {
       "id": "mansfield-islamic-center",
@@ -1137,15 +1174,16 @@
       "id": "islamic-association-of-lewisville-flower-mound",
       "name": "Islamic Association of Lewisville & Flower Mound",
       "shortName": "Islamic Association of Lewisville & Flower Mound",
-      "website": "",
+      "website": "https://www.ialfm.org/",
       "city": "",
       "state": "TX",
       "jumuahTimes": [],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://www.ialfm.org/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Website found. Static homepage text did not expose Jumu'ah times during this pass; needs rendered/manual verification."
     },
     {
       "id": "duncanville-islamic-center",
@@ -1207,15 +1245,16 @@
       "id": "islamic-association-of-north-texas-iant-masjid",
       "name": "Islamic Association of North Texas (IANT Masjid)",
       "shortName": "Islamic Association of North Texas (IANT Masjid)",
-      "website": "",
+      "website": "https://iant.com/",
       "city": "",
       "state": "TX",
       "jumuahTimes": [],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://iant.com/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Website found. Static homepage text says IANT offers two Jumuah prayers at the main location and one at the ICNA Center, but the times were not exposed in static page text during this pass."
     },
     {
       "id": "mesquite-islamic-center-mic-mosque",
@@ -1249,29 +1288,40 @@
       "id": "islamic-center-of-southlake",
       "name": "Islamic Center of Southlake",
       "shortName": "Islamic Center of Southlake",
-      "website": "",
+      "website": "https://www.icstx.org/",
       "city": "",
       "state": "TX",
       "jumuahTimes": [],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://www.icstx.org/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Website found. Static homepage text did not expose Jumu'ah times during this pass; needs rendered/manual verification."
     },
     {
       "id": "islamic-center-of-irving",
       "name": "Islamic Center of Irving",
       "shortName": "Islamic Center of Irving",
-      "website": "",
+      "website": "https://www.irvingmasjid.org/",
       "city": "",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "1st",
+          "time": "2:00 PM"
+        },
+        {
+          "label": "2nd",
+          "time": "3:15 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://www.irvingmasjid.org/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Public homepage lists 1st Jumu'ah at 2:00 PM with iqamah at 2:25 PM, and 2nd Jumu'ah at 3:15 PM with iqamah at 3:40 PM."
     },
     {
       "id": "icc-islamic-center-of-coppell",
@@ -1305,99 +1355,138 @@
       "id": "islamic-association-of-collin-county-plano-mosque",
       "name": "Islamic Association of Collin County (Plano Mosque)",
       "shortName": "Islamic Association of Collin County (Plano Mosque)",
-      "website": "",
+      "website": "https://planomasjid.org/",
       "city": "",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "1st",
+          "time": "1:45 PM"
+        },
+        {
+          "label": "2nd",
+          "time": "3:00 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://planomasjid.org/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Public homepage prayer table lists First Jummah Khutba at 1:45 PM and Second Jummah Khutba at 3:00 PM."
     },
     {
       "id": "mas-islamic-center-of-dallas",
       "name": "MAS Islamic Center Of Dallas",
       "shortName": "MAS Islamic Center Of Dallas",
-      "website": "",
+      "website": "https://masdfw.org/",
       "city": "",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "Jumu'ah",
+          "time": "1:30 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://masdfw.org/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Public homepage prayer table lists Friday adhaan at 1:30 PM; no separate Friday iqamah was captured in static text."
     },
     {
       "id": "islamic-center-of-frisco",
       "name": "Islamic Center of Frisco",
       "shortName": "Islamic Center of Frisco",
-      "website": "",
+      "website": "https://www.friscomasjid.org/",
       "city": "",
       "state": "TX",
       "jumuahTimes": [],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://www.friscomasjid.org/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Website found. Static homepage text notes Friday access opens early for Jummah, but did not expose Jumu'ah times during this pass; needs rendered/manual verification."
     },
     {
       "id": "valley-ranch-islamic-center-vric",
       "name": "Valley Ranch Islamic Center (VRIC)",
       "shortName": "Valley Ranch Islamic Center (VRIC)",
-      "website": "",
+      "website": "https://vric.org/",
       "city": "",
       "state": "TX",
       "jumuahTimes": [],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://vric.org/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Website found. Static homepage text mentions Jummah at VRIC, but did not expose a Jumu'ah time during this pass; needs rendered/manual verification."
     },
     {
       "id": "islamic-center-of-quad-cities",
       "name": "Islamic Center of Quad Cities",
       "shortName": "Islamic Center of Quad Cities",
-      "website": "",
+      "website": "https://icqcmasjid.org/",
       "city": "",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "1st",
+          "time": "1:45 PM"
+        },
+        {
+          "label": "2nd",
+          "time": "2:45 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://icqcmasjid.org/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Public homepage prayer widget lists Jumu'ah 1 at 1:45 PM with iqamah at 2:05 PM, and Jumu'ah 2 at 2:45 PM with iqamah at 3:05 PM."
     },
     {
       "id": "mckinney-islamic-association",
       "name": "McKinney Islamic Association",
       "shortName": "McKinney Islamic Association",
-      "website": "",
+      "website": "https://www.mckinneymasjid.org/",
       "city": "",
       "state": "TX",
       "jumuahTimes": [],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://www.mckinneymasjid.org/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Website found. Public homepage states MIA offers 3 Jumu'ah khutbah times, but the actual times were not exposed in static page text and need rendered/manual verification."
     },
     {
       "id": "islamic-association-of-allen",
       "name": "Islamic Association of Allen",
       "shortName": "Islamic Association of Allen",
-      "website": "",
+      "website": "https://allenmasjid.com/",
       "city": "",
       "state": "TX",
-      "jumuahTimes": [],
+      "jumuahTimes": [
+        {
+          "label": "1st",
+          "time": "2:00 PM"
+        },
+        {
+          "label": "2nd",
+          "time": "3:30 PM"
+        }
+      ],
       "source": {
-        "type": "google maps list",
-        "checkedAt": "2026-06-20"
+        "type": "website",
+        "checkedAt": "2026-06-20",
+        "url": "https://allenmasjid.com/"
       },
-      "notes": "Imported from a shared Google Maps list. Website and Jumu'ah times need research."
+      "notes": "Public homepage lists Khutbah 1 at 2:00 PM and Khutbah 2 at 3:30 PM."
     }
   ]
 }
