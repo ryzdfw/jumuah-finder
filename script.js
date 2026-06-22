@@ -1,6 +1,7 @@
 let directory = [];
 let activeQuery = "";
 let userLocation = null;
+let resultLimit = 10;
 
 const form = document.querySelector("#search-form");
 const searchInput = document.querySelector("#search");
@@ -10,10 +11,12 @@ const locationStatus = document.querySelector("#location-status");
 const statusOutput = document.querySelector("#status");
 const resultCount = document.querySelector("#result-count");
 const results = document.querySelector("#results");
+const showMoreButton = document.querySelector("#show-more-button");
 const requestForm = document.querySelector("#request-form");
 const requestStatus = document.querySelector("#request-status");
 const copyRequestButton = document.querySelector("#copy-request-button");
-const requestIssueUrl = "https://github.com/ryzdfw/jumuah-finder/issues/new";
+const requestSubmitButton = requestForm.querySelector('button[type="submit"]');
+const initialResultLimit = 10;
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -142,6 +145,7 @@ function buildRequestDetails() {
     jumuahTime: fieldValue(formData, "jumuahTime"),
     notes: fieldValue(formData, "notes"),
     contact: fieldValue(formData, "contact"),
+    company: fieldValue(formData, "company"),
   };
 
   const body = [
@@ -223,11 +227,15 @@ function renderResults() {
 
     return a.name.localeCompare(b.name);
   });
+  const visibleMasjids = filtered.slice(0, resultLimit);
   const nextFriday = nextFridayLabel();
 
-  resultCount.textContent = `${filtered.length} masjid${
+  resultCount.textContent = `Showing ${visibleMasjids.length} of ${
+    filtered.length
+  } masjid${
     filtered.length === 1 ? "" : "s"
   }`;
+  showMoreButton.hidden = visibleMasjids.length >= filtered.length;
 
   if (!filtered.length) {
     results.innerHTML = `
@@ -236,10 +244,11 @@ function renderResults() {
         filter.
       </p>
     `;
+    showMoreButton.hidden = true;
     return;
   }
 
-  results.innerHTML = filtered
+  results.innerHTML = visibleMasjids
     .map((masjid) => {
       const location =
         masjid.address ?? [masjid.city, masjid.state].filter(Boolean).join(", ");
@@ -297,6 +306,7 @@ async function loadDirectory() {
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   activeQuery = searchInput.value.trim().toLowerCase();
+  resultLimit = initialResultLimit;
   statusOutput.textContent = activeQuery
     ? `Filtering results for "${searchInput.value.trim()}".`
     : "Showing masjids near DFW.";
@@ -305,6 +315,7 @@ form.addEventListener("submit", (event) => {
 
 searchInput.addEventListener("input", () => {
   activeQuery = searchInput.value.trim().toLowerCase();
+  resultLimit = initialResultLimit;
   statusOutput.textContent = activeQuery
     ? `Filtering results for "${searchInput.value.trim()}".`
     : "Showing masjids near DFW.";
@@ -314,7 +325,13 @@ searchInput.addEventListener("input", () => {
 clearButton.addEventListener("click", () => {
   searchInput.value = "";
   activeQuery = "";
+  resultLimit = initialResultLimit;
   statusOutput.textContent = "Showing masjids near DFW.";
+  renderResults();
+});
+
+showMoreButton.addEventListener("click", () => {
+  resultLimit += initialResultLimit;
   renderResults();
 });
 
@@ -370,18 +387,43 @@ requestForm.addEventListener("submit", async (event) => {
   }
 
   const request = buildRequestDetails();
-  const issueUrl = new URL(requestIssueUrl);
-  issueUrl.searchParams.set("title", request.title);
-  issueUrl.searchParams.set("body", request.body);
 
-  try {
-    await copyRequestDetails();
-  } catch {
-    requestStatus.textContent =
-      "Opening the request. Copy the form details manually if needed.";
+  if (request.company) {
+    requestForm.reset();
+    requestStatus.textContent = "Request received.";
+    return;
   }
 
-  window.open(issueUrl.toString(), "_blank", "noopener");
+  requestSubmitButton.disabled = true;
+  requestStatus.textContent = "Saving request...";
+
+  try {
+    const response = await fetch("/api/masjid-request", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(request),
+    });
+    const result = await response.json().catch(() => ({}));
+
+    if (!response.ok) {
+      throw new Error(result.error || "Could not save the request.");
+    }
+
+    requestForm.reset();
+    requestStatus.textContent =
+      "Request saved. We will review it before adding anything to the site.";
+  } catch (error) {
+    try {
+      await copyRequestDetails();
+      requestStatus.textContent = `${error.message} The request details were copied as a fallback.`;
+    } catch {
+      requestStatus.textContent = error.message;
+    }
+  } finally {
+    requestSubmitButton.disabled = false;
+  }
 });
 
 loadDirectory();

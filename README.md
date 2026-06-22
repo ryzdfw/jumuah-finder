@@ -28,6 +28,15 @@ IDs, required fields, source dates, URL shape, coordinate shape, and Jumu'ah tim
 format. Missing websites and missing Jumu'ah times are allowed, but they are
 reported as research warnings.
 
+## Masjid Request Form
+
+The request form posts to `/api/masjid-request`, which saves each submission as
+a GitHub issue for review before a data PR is opened.
+
+In Vercel, set `JUMUAH_FINDER_GITHUB_TOKEN` to a GitHub token with issue write
+access for `ryzdfw/jumuah-finder`. Optional overrides are
+`GITHUB_REPOSITORY_OWNER` and `GITHUB_REPOSITORY_NAME`.
+
 ## Data
 
 Masjid data lives in `masjid-data.json`. Some masjid websites render prayer widgets visually, so if static page text does not show Jumuah times, verify the rendered page before marking data unavailable.
