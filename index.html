@@ -61,6 +61,85 @@
         <div id="results" class="results"></div>
       </section>
 
+      <section class="request-section" aria-labelledby="request-title">
+        <div>
+          <p class="eyebrow">Help improve the list</p>
+          <h2 id="request-title">Request a masjid</h2>
+          <p class="summary">
+            Send the details for a masjid that should be added or corrected.
+          </p>
+        </div>
+
+        <form id="request-form" class="request-panel">
+          <div class="form-grid">
+            <label>
+              Masjid name
+              <input
+                name="masjidName"
+                autocomplete="organization"
+                required
+                placeholder="Masjid name"
+              >
+            </label>
+            <label>
+              City or address
+              <input
+                name="location"
+                autocomplete="street-address"
+                placeholder="City, address, or area"
+              >
+            </label>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              Website or social link
+              <input
+                name="website"
+                type="url"
+                inputmode="url"
+                placeholder="https://..."
+              >
+            </label>
+            <label>
+              Jumu'ah time
+              <input
+                name="jumuahTime"
+                placeholder="Example: 1:30 PM, 2:15 PM"
+              >
+            </label>
+          </div>
+
+          <label>
+            Notes
+            <textarea
+              name="notes"
+              rows="4"
+              placeholder="Anything helpful: multiple services, khutbah language, where you found the time, or what needs correcting."
+            ></textarea>
+          </label>
+
+          <label>
+            Your contact info, optional
+            <input
+              name="contact"
+              autocomplete="email"
+              placeholder="Email or phone if follow-up is okay"
+            >
+          </label>
+
+          <div class="request-actions">
+            <button type="submit">Create request</button>
+            <button id="copy-request-button" class="secondary" type="button">
+              Copy details
+            </button>
+          </div>
+          <p id="request-status" class="status" aria-live="polite">
+            Requests open as a prefilled GitHub issue for review.
+          </p>
+        </form>
+      </section>
+
       <footer class="site-footer">
         <p>
           Jumu'ah Finder was created with an AI agent. Masjid details and prayer

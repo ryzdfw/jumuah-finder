@@ -10,6 +10,10 @@ const locationStatus = document.querySelector("#location-status");
 const statusOutput = document.querySelector("#status");
 const resultCount = document.querySelector("#result-count");
 const results = document.querySelector("#results");
+const requestForm = document.querySelector("#request-form");
+const requestStatus = document.querySelector("#request-status");
+const copyRequestButton = document.querySelector("#copy-request-button");
+const requestIssueUrl = "https://github.com/ryzdfw/jumuah-finder/issues/new";
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -123,6 +127,58 @@ function distanceLabel(masjid) {
   const rounded = miles < 10 ? miles.toFixed(1) : Math.round(miles).toString();
   const suffix = masjid.coordinates?.approximate ? " approx." : "";
   return `${rounded} mi${suffix}`;
+}
+
+function fieldValue(formData, key) {
+  return String(formData.get(key) ?? "").trim();
+}
+
+function buildRequestDetails() {
+  const formData = new FormData(requestForm);
+  const details = {
+    masjidName: fieldValue(formData, "masjidName"),
+    location: fieldValue(formData, "location"),
+    website: fieldValue(formData, "website"),
+    jumuahTime: fieldValue(formData, "jumuahTime"),
+    notes: fieldValue(formData, "notes"),
+    contact: fieldValue(formData, "contact"),
+  };
+
+  const body = [
+    "## Masjid request",
+    "",
+    `Masjid name: ${details.masjidName || "Not provided"}`,
+    `City/address: ${details.location || "Not provided"}`,
+    `Website/social link: ${details.website || "Not provided"}`,
+    `Jumu'ah time: ${details.jumuahTime || "Not provided"}`,
+    "",
+    "Notes:",
+    details.notes || "Not provided",
+    "",
+    `Requester contact: ${details.contact || "Not provided"}`,
+  ].join("\n");
+
+  return {
+    ...details,
+    body,
+    title: details.masjidName
+      ? `Masjid request: ${details.masjidName}`
+      : "Masjid request",
+  };
+}
+
+async function copyRequestDetails() {
+  const { body } = buildRequestDetails();
+
+  if (!navigator.clipboard?.writeText) {
+    requestStatus.textContent =
+      "Copy is not available in this browser. Select the form text manually.";
+    return false;
+  }
+
+  await navigator.clipboard.writeText(body);
+  requestStatus.textContent = "Request details copied.";
+  return true;
 }
 
 function renderTimes(times) {
@@ -296,6 +352,36 @@ locationButton.addEventListener("click", () => {
       timeout: 10000,
     },
   );
+});
+
+copyRequestButton.addEventListener("click", async () => {
+  try {
+    await copyRequestDetails();
+  } catch {
+    requestStatus.textContent = "Could not copy the request details.";
+  }
+});
+
+requestForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  if (!requestForm.reportValidity()) {
+    return;
+  }
+
+  const request = buildRequestDetails();
+  const issueUrl = new URL(requestIssueUrl);
+  issueUrl.searchParams.set("title", request.title);
+  issueUrl.searchParams.set("body", request.body);
+
+  try {
+    await copyRequestDetails();
+  } catch {
+    requestStatus.textContent =
+      "Opening the request. Copy the form details manually if needed.";
+  }
+
+  window.open(issueUrl.toString(), "_blank", "noopener");
 });
 
 loadDirectory();
