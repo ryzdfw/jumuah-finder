@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "test": "node --check script.js && node --check scripts/import-google-maps-list.js && node scripts/validate-data.js"
+    "test": "node --check script.js && node --check api/masjid-request.js && node --check scripts/import-google-maps-list.js && node scripts/validate-data.js"
   }
 }

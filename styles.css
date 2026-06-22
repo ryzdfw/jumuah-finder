@@ -74,6 +74,10 @@ button.secondary {
   box-shadow: none;
 }
 
+button.secondary:hover {
+  box-shadow: 0 10px 18px rgba(20, 35, 31, 0.08);
+}
+
 .location-button {
   background: var(--accent-soft);
 }
@@ -205,6 +209,14 @@ textarea:focus {
   margin-top: 14px;
 }
 
+.form-honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .request-actions {
   display: flex;
   gap: 12px;
@@ -325,6 +337,18 @@ label {
 .results {
   display: grid;
   gap: 14px;
+}
+
+.results-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.results-actions .secondary {
+  width: auto;
+  min-width: 210px;
+  margin-top: 0;
 }
 
 .masjid-card {
@@ -462,6 +486,10 @@ label {
   }
 
   .request-actions .secondary {
+    width: 100%;
+  }
+
+  .results-actions .secondary {
     width: 100%;
   }
 
