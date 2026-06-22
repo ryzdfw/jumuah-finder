@@ -59,6 +59,11 @@
           <p id="result-count" class="count"></p>
         </div>
         <div id="results" class="results"></div>
+        <div class="results-actions">
+          <button id="show-more-button" class="secondary" type="button" hidden>
+            Show more masjids
+          </button>
+        </div>
       </section>
 
       <section class="request-section" aria-labelledby="request-title">
@@ -128,6 +133,11 @@
             >
           </label>
 
+          <label class="form-honeypot" aria-hidden="true">
+            Company
+            <input name="company" tabindex="-1" autocomplete="off">
+          </label>
+
           <div class="request-actions">
             <button type="submit">Create request</button>
             <button id="copy-request-button" class="secondary" type="button">
@@ -135,7 +145,7 @@
             </button>
           </div>
           <p id="request-status" class="status" aria-live="polite">
-            Requests open as a prefilled GitHub issue for review.
+            Requests are saved for review before any masjid is added.
           </p>
         </form>
       </section>
