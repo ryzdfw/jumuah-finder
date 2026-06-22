@@ -34,7 +34,8 @@ body {
 }
 
 button,
-input {
+input,
+textarea {
   font: inherit;
 }
 
@@ -78,18 +79,34 @@ button.secondary {
 }
 
 input[type="text"],
-input[name="search"] {
+input[type="url"],
+input:not([type]),
+input[name="search"],
+textarea {
   width: 100%;
-  min-height: 48px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 0 15px;
   background: var(--surface-strong);
   color: var(--ink);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
-input:focus {
+input[type="text"],
+input[type="url"],
+input:not([type]),
+input[name="search"] {
+  min-height: 48px;
+  padding: 0 15px;
+}
+
+textarea {
+  min-height: 124px;
+  padding: 13px 15px;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
   border-color: rgba(15, 107, 85, 0.55);
   outline: 3px solid rgba(15, 107, 85, 0.12);
 }
@@ -144,6 +161,7 @@ input:focus {
 
 .intro,
 .search-panel,
+.request-panel,
 .masjid-card {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -161,6 +179,42 @@ input:focus {
 .search-panel {
   align-self: center;
   padding: 24px;
+}
+
+.request-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(360px, 1.28fr);
+  gap: 22px;
+  align-items: start;
+  margin-top: 36px;
+}
+
+.request-panel {
+  padding: 24px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.request-panel label + label,
+.form-grid + .form-grid,
+.form-grid + label {
+  margin-top: 14px;
+}
+
+.request-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.request-actions .secondary {
+  width: auto;
+  margin-top: 0;
 }
 
 .panel-title {
@@ -381,6 +435,7 @@ label {
   }
 
   .finder,
+  .request-section,
   .masjid-card {
     grid-template-columns: 1fr;
   }
@@ -395,6 +450,19 @@ label {
 
   .search-row {
     grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .request-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .request-actions .secondary {
+    width: 100%;
   }
 
   .results-heading {
